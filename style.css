@@ -7,12 +7,13 @@ body{
     position: absolute;
     inset: 0 0 0 0;
 }
+
 h1{
     text-align: center;
     text-transform: uppercase;
     font-family: cursive;
     font-size: x-large;
-    text-shadow: 2px 2px 5px midnightblue;
+    text-shadow: 2px 2px 5px rgb(176, 197, 255);
 }
 
 .card{
@@ -25,8 +26,8 @@ h1{
     margin: 3%;
     padding: 10px;
     border-radius: 1%;
-    background: rgba(175, 212, 255, 0.3);
-    box-shadow: 0px 0px 5px 1px black;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 1px rgb(176, 197, 255);
 }
 .card img{
     margin-left: auto;
@@ -35,11 +36,34 @@ h1{
     height: 200px;
     object-fit: cover;
     border-radius: 12%;
-    filter: drop-shadow(0px 0px 4px black);
+    filter: drop-shadow(0px 0px 4px rgb(176, 197, 255));
+}
+.links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.links .logo{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    filter: none;
 }
 .scroll{
     display: flexbox;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scrollbar-width: none;
+}
+
+h4{
+    margin-bottom: 0;
+}
+
+.infobox{
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: 10px;
+    margin-block: 10px;
+    padding-block: 10px; 
+    padding-inline: 20px;   
 }
