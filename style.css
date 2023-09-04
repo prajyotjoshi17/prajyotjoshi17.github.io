@@ -76,7 +76,7 @@ h4{
       grid-template-rows: 100%;
       overflow: hidden;  
       overflow-y: scroll;
-      background-clip: content-box;
+      background-attachment: fixed;
     }
     .scroll {
         display: block;
