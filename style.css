@@ -3,7 +3,7 @@ body{
     background-size: cover;
     color: antiquewhite;
     display:grid;
-    grid-template-columns: 30% 70%;
+    /* grid-template-columns: 30% 70%; */
     position: absolute;
     inset: 0 0 0 0;
 }
@@ -67,3 +67,27 @@ h4{
     padding-block: 10px; 
     padding-inline: 20px;   
 }
+
+
+
+/* Responsive layout */
+@media screen and (orientation: portrait) {
+    body {
+      grid-template-rows: 100%;
+      overflow: hidden;  
+      overflow-y: scroll;
+      background-clip: content-box;
+    }
+    .scroll {
+        display: block;
+        overflow-y: visible;
+    }
+  }
+
+  @media screen and (orientation: landscape) {
+    body {
+    grid-template-columns: 30% 70%;
+    }
+  }
+
+
