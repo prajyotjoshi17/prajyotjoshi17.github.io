@@ -1,0 +1,31 @@
+body{
+    background-image: url('./assets/backdrop.jpg');
+    background-size: cover;
+    color: antiquewhite;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    position: absolute;
+    inset: 0 0 0 0;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: x-large;
+}
+
+.card{
+    height: 90%;
+    overflow-y: hidden;
+    margin: 3%;
+    padding: 10px;
+    border-radius: 20px;
+    background: rgba(197, 197, 197,0.5);
+}
+
+.scroll{
+    display: flexbox;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
